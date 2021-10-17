@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+</head>
+<body>
+    <div style="display: grid; grid-template-areas: 'top-left top-left top-left top-right top-right top-right' 'main main main main main main'; grid-gap: .1rem; background-color: black; padding: .1rem;">
+        <div style="grid-area: top-left; text-align: center; padding: .1rem; background-color: white;">
+            <h3>1 Tipo de autorización</h3>
+            <div style="display: flex; justify-content: space-around; padding-bottom: .5rem;">
+                <div>
+                    <input type="checkbox" name="checkbox-operacion" id="">
+                    <label for="checkbox-operacion">Por Operacion</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox-global" id="">
+                    <label for="checkbox-global">Global</label>
+                </div>
+            </div>
+        </div>
+        <div style="grid-area: top-right; text-align: center; padding: .1rem; background-color: white;">
+            <h3>2 Tipo de representación</h3>
+            <div style="display: flex; justify-content: space-around; padding-bottom: .5rem;">
+                <div>
+                    <input type="checkbox" name="checkbox-directa" id="">
+                    <label for="checkbox-directa">Directa</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox-indirecta" id="">
+                    <label for="checkbox-indirecta">Indirecta</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox-ambas" id="">
+                    <label for="checkbox-ambas">Ambas</label>
+                </div>
+            </div>
+        </div>
+        <div style="grid-area: main; padding: .1rem; background-color: white;">
+            <h3>3 Ambito territorial</h3>
+            <div style="display: flex; justify-items: self-start;">
+                <div>
+                    <input type="checkbox" name="checkbox-nacional" id="">
+                    <label style="margin-right: 10rem;" for="checkbox-nacional">Nacional</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox-recintos-aduaneros" id="">
+                    <label for="checkbox-recintos-aduaneros">Solo para los siguientes recintos aduaneros **:</label>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-around; margin-top: 2rem;">
+                <div style="display: grid; ">
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center;">Código de recinto</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                </div>
+                <div style="display: grid; ">
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center;">Código de recinto</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                </div>
+                <div style="display: grid; ">
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center;">Código de recinto</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                    <div style="border: 1px solid rgba(0, 0, 0, 0.8); padding: .5rem 6rem; text-align: center; color: white;">_</div>
+                </div>
+            </div>
+
+            <h3>4 Fecha hasta la que está vigente la autorización:</h3>
+                <div style="padding: 0 0 .5rem .5rem;">
+                    <input type="checkbox" name="checkbox-autorizacion-indefinida" id="">
+                    <label for="checkbox-autorizacion-indefinida">Autorizacion Indefinida</label>
+                    <br>
+                    <input type="checkbox" name="checkbox-hasta" id="">
+                    <label for="checkbox-hasta">Hasta:</label>
+                </div>
+        </div>
+    </div>
+</body>
+</html> 
